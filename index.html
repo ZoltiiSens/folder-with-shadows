@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper {
+            width: 100%;
+            min-height: 100vh;
+            background-color: #2e2f34;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .folder{
+            position: relative;
+            /* filter: drop-shadow(0 0 1rem white); */
+        }
+        .folder-upper {
+            position: absolute;
+            top: -45px;
+            left: -6px;
+            width: 182px;
+            height: 46px;
+            background-color: transparent;
+            overflow: hidden;
+        }
+        .folder-upper-inside {
+            position: absolute;
+            right: 6px;
+            bottom: 0;
+            width: 170px;
+            height: 40px;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            background-color: #2e2f34;
+            box-shadow: 5px 5px 10px rgba(13, 13, 15, 0.75), -2px -2px 4px #5E6569, -3px -3px 6px #262E32;
+        }
+        .folder-body {
+            width: 400px;
+            height: 285px;
+            border-radius: 0 15px 15px 15px;
+            padding: 15px;
+            background-color: #2e2f34;
+            box-shadow: 5px 5px 10px rgba(13, 13, 15, 0.75), -2px -2px 4px #5E6569, -3px -3px 6px #262E32;
+        }
+        h2 {
+            font: 500 18px/22px "Chakra Petch", sans-serif;
+            color: #FE6000;
+            margin-bottom: 10px;
+        }
+        p {
+            font: 400 14px/16px "Lato", sans-serif;
+            color: #BAB8B8;
+            line-height: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="folder">
+            <div class="folder-upper">
+                <div class="folder-upper-inside"></div>
+            </div>
+            <div class="folder-body">
+                <h2>Content</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugit ratione aliquam quo suscipit. Eos et non beatae eius temporibus!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quia rerum ullam culpa iusto, perspiciatis quos neque delectus, quas maxime consequuntur cumque cum nemo illo.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
